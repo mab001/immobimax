@@ -1,0 +1,264 @@
+{{!< default}} <section class="hero-area">
+    <div class="hero-slides owl-carousel">
+        <!-- Single Hero Slide -->
+        <div class="single-hero-slide bg-img" style="background-image: url(img/bg-img/hero1.jpg);">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <div class="hero-slides-content">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Single Hero Slide -->
+        <div class="single-hero-slide bg-img" style="background-image: url(img/bg-img/hero2.jpg);">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <div class="hero-slides-content">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Single Hero Slide -->
+        <div class="single-hero-slide bg-img" style="background-image: url(img/bg-img/hero3.jpg);">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <div class="hero-slides-content">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+
+
+
+    <section class="elements-area section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading wow fadeInUp">
+                        <h2>Gestion ImmobiMax</h2>
+                        <p>La gestion immobilière à son maximum !</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- ##### Progress Bars & Accordions ##### -->
+
+                <!-- ##### Accordians ##### -->
+                <div class="col-12 col-lg-12  wow fadeInUp">
+                    <p>
+                        La gestion immobilière est complexe. Elle demande une bonne dose de connaissances, de temps, de
+                        tact et surtout… beaucoup d’amour ! Nombreux aspects et facteurs d’influences demeurent
+                        méconnus ou non maîtrisés. Pour la bonne gestion de votre éventail immobilier et pour en
+                        maximiser la valeur résiduelle, le contrôle de ces facteurs est primordial.
+                        Gestion ImmobiMax est un spécialiste de la gestion immobilière. Passionnés et dévoués, nos
+                        professionnels sont spécialement formés pour répondre à tous vos besoins et pour veiller sur
+                        votre patrimoine immobilier en toute sécurité.
+                        Choisir Gestion ImmobiMax, c’est opter pour la tranquillité d’esprit.
+                    </p>
+                </div>
+
+            </div>
+            <div class="row">
+                <!-- ##### Tabs ##### -->
+                <div class="col-12 col-lg-12  wow fadeInUp">
+                    <div class="south-tabs-content">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            {{#each Descriptions}}
+                            <li class="nav-item">
+                                <a class="nav-link" id="tab--{{@index}}" data-toggle="tab" href="#tab{{@index}}" role="tab"
+                                    aria-controls="tab{{@index}}" aria-selected="false">{{title}}</a>
+                            </li>
+                            {{/each}}
+                        </ul>
+
+                        <div class="tab-content mb-100 " id="myTabContent">
+                            {{#each Descriptions}}
+                            <div class="tab-pane fade" id="tab{{@index}}" role="tabpanel" aria-labelledby="tab--{{@index}}">
+                                <div class="south-tab-content">
+                                    <!-- Tab Text -->
+                                    <div class="south-tab-text">
+                                        <h6>{{subtitle}}</h6>
+                                        <p>{{text}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            {{/each}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="call-to-action-area bg-fixed bg-overlay-black" style="background-image: url(img/bg-img/cta.jpg)">
+        <div class="container h-100">
+            <div class="row align-items-center h-100">
+                <div class="col-12">
+                    <div class="cta-content text-center">
+                        <h2 class="wow fadeInUp" data-wow-delay="300ms">Vous cherchez un gestionnaire immobilier ?</h2>
+
+                        <a href="/contact" class="btn south-btn mt-50 wow fadeInUp" data-wow-delay="500ms">Contactez
+                            nous</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="meet-the-team-area section-padding-50-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading">
+                        <h2>Notre Mission</h2>
+                        <p class="wow fadeInUp" data-wow-delay="450ms">Avec l’équipe de Gestion ImmobiMax,
+                            l’administration de votre éventail immobilier sera entre bonnes mains.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- ##### Progress Bars & Accordions ##### -->
+
+                <!-- ##### Accordians ##### -->
+                <div class="col-12 col-lg-12  wow fadeInUp">
+                    <p class="wow fadeInUp" data-wow-delay="450ms" style='text-align: center;'>
+                        Notre mission : battre toute compétition grâce à nos prix les plus bas sur le
+                        marché, notre service, notre disponibilité, notre soutien, nos formations sur mesure et nos
+                        services adaptés à vos besoins.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="container half-section">
+            <div class="row">
+                <div class="row align-children">
+                    <div class="col-lg-7 col-md-12  order-sm-1 text-center mb-xs-24">
+                        <img class="img-responsive wow fadeInUp" data-wow-delay="350ms" alt="NOTRE EXPERIENCE" src="img/bg-img/about.jpg"
+                            scale="0">
+                    </div>
+
+                    <div class="col-lg-5 col-md-offset-1 col-md-12 order-sm-2 col-sm-offset-1">
+                        <div class="container">
+                            <div class="section-heading text-left wow fadeInUp" data-wow-delay="250ms">
+                                <h5>NOTRE EXPERIENCE</h5>
+                            </div>
+                            <div class="mb32">
+                                <div class="about-content">
+                                    <p class="wow fadeInUp" data-wow-delay="450ms">
+                                        Nos connaissances et notre expertise pratique nous permettent de vous offrir
+                                        une gestion
+                                        organisée, simplifiée et à la hauteur des plus grandes firmes de gestion
+                                        immobilière.
+                                    </p>
+
+                                    <p class="wow fadeInUp" data-wow-delay="450ms">
+                                        Nous sommes des gestionnaires certifiés. Nous connaissons tout le processus de
+                                        gestion dans
+                                        les
+                                        moindres détails. Notre expérience combinée dans le domaine de l’immobilier, de
+                                        la vente,
+                                        de la
+                                        logistique et de la gestion d’employés nous permet de résoudre une multitude de
+                                        problèmes
+                                        sur
+                                        le champ.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div> 
+
+            </div>
+        </div>
+
+    <div class="container half-section">
+            <div class="row">
+                <div class="row align-children">
+                    <div class="col-lg-5 col-md-12 col-md-offset-1 col-sm-12 order-sm-2 col-sm-offset-1">
+                        <div class="container">
+                            <div class="section-heading text-left wow fadeInUp" data-wow-delay="250ms">
+                                <h5>NOTRE ENGAGEMENT</h5>
+                            </div>
+                            <div class="mb32">
+                                <div class="about-content">
+                                    <p class="wow fadeInUp" data-wow-delay="450ms">
+                                        Nos connaissances et notre expertise pratique nous permettent de vous offrir
+                                        une gestion
+                                        organisée, simplifiée et à la hauteur des plus grandes firmes de gestion
+                                        immobilière.
+                                    </p>
+
+                                    <p class="wow fadeInUp" data-wow-delay="450ms">
+                                        Nous sommes des gestionnaires certifiés. Nous connaissons tout le processus de
+                                        gestion dans
+                                        les
+                                        moindres détails. Notre expérience combinée dans le domaine de l’immobilier, de
+                                        la vente,
+                                        de la
+                                        logistique et de la gestion d’employés nous permet de résoudre une multitude de
+                                        problèmes
+                                        sur
+                                        le champ.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-12 order-md-2 col-sm-12 order-sm-1 text-center mb-xs-24">
+                        <img class="img-responsive wow fadeInUp" data-wow-delay="350ms" alt="NOTRE EXPERIENCE" src="img/bg-img/about.jpg"
+                            scale="0">
+                    </div>
+                    <!--end of row-->
+                </div> 
+                
+            </div>
+        </div>
+
+    </section>
+
+    {{!-- <div class="container">
+        <div class="jumbotron"><img src="/images/logo.svg" width="160">
+            <h1>Welcome</h1>
+            <p>This is your new <a href='http://keystonejs.com' target='_blank'>KeystoneJS</a> website.</p>
+            <p>
+                It includes the latest versions of
+                <a href='http://getbootstrap.com/' target='_blank'>Bootstrap</a>
+                and <a href='http://www.jquery.com/' target='_blank'>jQuery</a>.
+            </p>
+            <p>Visit the <a href='http://keystonejs.com/guide' target='_blank'>Getting Started</a> guide to learn how
+                to customise it.</p>
+            <hr>
+            <p>We have created a default Admin user for you with the email <strong>ramses.ntibu@gmail.com</strong> and
+                the password <strong>123456</strong>.</p>
+            <p><a href="/keystone/signin" style="margin-right: 10px" class="btn btn-lg btn-primary">Sign in</a> to use
+                the Admin UI.</p>
+            <hr>
+            <p>
+                Remember to <a href='https://github.com/keystonejs/keystone' target='_blank'>Star KeystoneJS on GitHub</a>
+                and
+                <a href='https://twitter.com/keystonejs' target='_blank'>follow @keystonejs</a> on twitter for updates.
+            </p>
+        </div>
+    </div> --}}
