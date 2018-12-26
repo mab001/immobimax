@@ -389,7 +389,7 @@ img {
   color: #ffffff;
   font-size: 14px;
   font-weight: 600;
-  background-color: #947054;
+  background-color: #7A147E;
   border-radius: 0;
   line-height: 50px;
   padding: 0 30px;
@@ -420,7 +420,7 @@ img {
 .dark .classynav ul li .megamenu,
 .dark.breakpoint-on .classynav > ul > li > a,
 .dark.breakpoint-on .classy-navbar .classy-menu {
-  background-color: #000000; }
+  background-color: #414254; }
 
 .header-area {
   position: absolute;
@@ -434,7 +434,7 @@ img {
   position: relative;
   z-index: 1;
   height: 45px;
-  background-color: #000000; }
+  background-color: #414254; }
   @media only screen and (max-width: 767px) {
     .top-header-area {
       height: auto; } }
@@ -454,7 +454,7 @@ img {
         color: #ffffff; }
   .top-header-area .phone-number {
     line-height: 1;
-    background-color: #947054;
+    background-color: #2B2F3B;
     height: 45px;
     margin-bottom: 0; }
     .top-header-area .phone-number .icon {
@@ -527,7 +527,7 @@ img {
         width: 100%;
         margin-top: 15px;
         line-height: 50px;
-        background-color: #947054; } }
+        background-color: #414254; } }
     @media only screen and (max-width: 767px) {
       .main-header-area .searchbtn {
         margin-left: 0;
@@ -535,9 +535,9 @@ img {
         width: 100%;
         margin-top: 15px;
         line-height: 50px;
-        background-color: #947054; } }
+        background-color: #414254; } }
     .main-header-area .searchbtn:hover {
-      background-color: #947054; }
+      background-color: #414254; }
   .main-header-area .south-search-form {
     position: relative;
     z-index: 1;
@@ -1459,7 +1459,7 @@ img {
     padding: 50px 0; }
     .single-blog-area .post-content .post-date a {
       font-size: 14px;
-      color: #947054;
+      color: #7A147E;
       margin-bottom: 10px;
       display: block; }
     .single-blog-area .post-content .headline {
