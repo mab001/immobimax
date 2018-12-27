@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    width: 500px;
+    height: 400px;
+    flex-wrap: wrap;
+  }
+  .orange {
+    flex-grow: 1;
+    min-width: 100px;
+    max-width: 30%;
+  }
+  .blue {
+    flex-grow: 1;
+  }
+  @media (max-width: 1000px) { 
+    .orange{
+      min-width: 100%;
+    }
+    .blue{
+      min-width: 100%;
+    }
+  }
+  .grey, .purple {
+    flex-grow: 1;
+    width: 100%;
+  }

@@ -81,6 +81,7 @@ keystone.set('nav', {
 	proprietes: ['proprietes', 'propriete-categories'],
 	pages: 'pages',
 	membres: 'membres',
+	temoignages: 'temoignages',
 	admins: 'admins',
 });
 

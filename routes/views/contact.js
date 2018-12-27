@@ -12,9 +12,11 @@ exports = module.exports = function (req, res) {
 	locals.section = 'Membre';
 	locals.filters = {
 		membre: req.params.membre,
+		temoignage: req.params.temoignage,
 	};
 	locals.data = {
 		membres: [],
+		temoignages: [],
 	};
 
 
@@ -45,6 +47,21 @@ exports = module.exports = function (req, res) {
 				next(err);
 			});
 		});
+
+		//test
+		keystone.list('Temoignage').model.find().sort('name').exec(function (err, results) {
+
+			if (err || !results.length) {
+				return next(err);
+			}
+
+			locals.data.temoignages = results;
+
+			// Load the counts for each category
+		
+		});
+
+
 	});
 
 		// Load the current category filter
@@ -71,13 +88,32 @@ exports = module.exports = function (req, res) {
 					state: 'published',
 				},
 			})
-			
+
 			q.exec(function (err, results) {
 				locals.data.membres = results;
 				next(err);
 			});
+
 		});
 
+
+		view.on('init', function (next) {
+	
+			var q = keystone.list('Temoignage').paginate({
+				page: req.query.page || 1,
+				perPage: 10,
+				maxPages: 10,
+				filters: {
+					state: 'published',
+				},
+			})
+
+			q.exec(function (err, results) {
+				locals.data.temoignages = results;
+				next(err);
+			});
+
+		});
 
 	// On POST requests, add the Enquiry item to the database
 	view.on('post', { action: 'contact' }, function (next) {

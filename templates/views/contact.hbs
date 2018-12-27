@@ -99,3 +99,29 @@
 	</div>
 	{{>pagination}}
 </div>
+
+
+<div>
+	<div class="row">
+		<div class="col-sm-8 col-md-9">
+			<h4 class="text-weight-normal">Quelques témoignages</h4>
+			<div class="blog">
+				{{# each data.temoignages.results}}
+				<div data-ks-editable="{{#if ../user}}{{adminEditableUrl ../../user _id}}{{/if}}" class="post">
+					<h2><a href="{{postUrl slug}}">{{{title}}}</a></h2>
+				
+							{{#if author.name.first}}by {{author.name.first}}{{/if}}
+					
+					{{#if image}}<img src="{{{cloudinaryUrl image width=160 height=160 crop='fit' }}}" class="img pull-right">{{/if}}
+					<p>{{{content.extended}}}</p>
+					<p></p>
+                    <p></p>
+                    <p></p>
+				</div>
+				{{/each}}
+			</div>
+		</div>
+		
+	</div>
+	{{>pagination}}
+</div>

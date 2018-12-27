@@ -1,18 +1,31 @@
 var keystone = require('keystone');
 var Types = keystone.Field.Types;
 
-var Temoignage = new keystone.List('Temoignage',{
-    map : {name : 'title' },
-    singular:'Temoignage',
-    autokey:{path : 'slug', from: 'title', unique:true}
+/**
+ * Post Model
+ * ==========
+ */
+
+var Temoignage = new keystone.List('Temoignage', {
+	map: { name: 'title' },
+	autokey: { path: 'slug', from: 'title', unique: true },
 });
 
 Temoignage.add({
-    title: {type: String, required:true},
-    Name:{type: String},
-    Profession:{type: String},
-    Commentaire: {type : Types.Html, wysiwg: true, height:300},
-    publishedDate:{type: Date, default: Date.now},
+	title: { type: String, required: true },
+	state: { type: Types.Select, options: 'draft, published, archived', default: 'draft', index: true },
+	author: { type: Types.Relationship, ref: 'Admin', index: true },
+	publishedDate: { type: Types.Date, index: true, dependsOn: { state: 'published' } },
+	image: { type: Types.CloudinaryImage },
+	content: {
+		extended: { type: Types.Html, wysiwyg: true, height: 400 },
+	},
+	categories: { type: Types.Relationship, ref: 'PostCategory', many: true },
 });
 
+Temoignage.schema.virtual('content.full').get(function () {
+	return this.content.extended || this.content.brief;
+});
+
+Temoignage.defaultColumns = 'title, state|20%, author|20%, publishedDate|20%';
 Temoignage.register();
