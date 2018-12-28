@@ -80,6 +80,7 @@ keystone.set('nav', {
 	posts: ['posts', 'post-categories'],
 	proprietes: ['proprietes', 'propriete-categories'],
 	pages: 'pages',
+	services: ['service-titres','service-paragraphes'],
 	membres: 'membres',
 	temoignages: 'temoignages',
 	admins: 'admins',

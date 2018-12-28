@@ -66,10 +66,10 @@ exports= module.exports = function (app) {
 					"key": "home-fr",
 					"href": "/"
 				},
-				"mission": {
-					"label": "Mission",
-					"key": "mission-en",
-					"href": "/mission"
+				"serviceEtReseau": {
+					"label": "services Et reseaux",
+					"key": "serviceEtReseau-en",
+					"href": "/serviceEtReseau"
 				},
 				"blog": {
 					"label": "Blog",
@@ -99,10 +99,10 @@ exports= module.exports = function (app) {
 					"key": "home-en",
 					"href": "/"
 				},
-				"mission": {
-					"label": "Mission",
-					"key": "mission-en",
-					"href": "/mission"
+				"serviceEtReseau": {
+					"label": "services Et Reseaux",
+					"key": "serviceEtReseau-en",
+					"href": "/serviceEtReseau"
 				},
 				"blog": {
 					"label": "Blog",
@@ -132,15 +132,15 @@ exports= module.exports = function (app) {
 				section: null,
 				route: '/'
 			},
-			'mission': {
+			'serviceEtReseau': {
 				section: null,
-				controller: routes.views.mission,
+				controller: routes.views.serviceEtReseau,
 				languages: {
 					'fr': {
-						route: '/mission'
+						route: '/serviceEtReseau'
 					},
 					'en': {
-						route: '/mission'
+						route: '/serviceEtReseau'
 					}
 				}
 			},

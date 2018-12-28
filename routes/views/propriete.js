@@ -24,7 +24,7 @@ exports= module.exports = function (req, res) {
 				return next(err);
 			}
 
-			locals.data.reseaux = results;
+			locals.data.proprietes = results;
 
 			// Load the counts for each category
 			async.each(locals.data.proprietes, function (proprietes, next) {
