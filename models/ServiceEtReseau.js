@@ -1,4 +1,4 @@
-var keystone = require('keystone');
+/*var keystone = require('keystone');
 var Types = keystone.Field.Types;
 
 var ServiceEtReseau = new keystone.List('ServiceEtReseau',{
@@ -21,4 +21,4 @@ ServiceEtReseau.schema.virtual('content.full').get(function () {
 	return this.content.extended || this.content.brief;
 });
 
-ServiceEtReseau.register();
+ServiceEtReseau.register();*/

@@ -5,15 +5,16 @@ var Types = keystone.Field.Types;
  * ==================
  */
 
-var ServiceTitre = new keystone.List('ServiceTitre', {
+var ServiceReseauTitre = new keystone.List('ServiceReseauTitre', {
 	autokey: { from: 'name', path: 'key', unique: true },
 });
 
-ServiceTitre.add({
+ServiceReseauTitre.add({
 	name: { type: String, required: true },
 	title:{ type: String, height: 400 },
+	categories: { type: Types.Relationship, ref: 'ServiceReseauCategory', many: true },
 });
 
-ServiceTitre.relationship({ ref: 'Service', path: 'services', refPath: 'categories' });
 
-ServiceTitre.register();
+
+ServiceReseauTitre.register();

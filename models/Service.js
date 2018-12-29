@@ -1,10 +1,10 @@
-var keystone = require('keystone');
+/*var keystone = require('keystone');
 var Types = keystone.Field.Types;
 
 /*
  * Post Model
  * ==========
-*/
+
 
 var Service = new keystone.List('Service', {
 	map: { name: 'title' },
@@ -29,5 +29,5 @@ Service.schema.virtual('content.full').get(function () {
 });
 
 Service.defaultColumns = 'title, state|20%, author|20%, publishedDate|20%';
-Service.register();
+Service.register();*/
  

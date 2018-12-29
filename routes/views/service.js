@@ -1,4 +1,4 @@
-
+/*
 var keystone = require('keystone');
 
 exports = module.exports = function (req, res) {
@@ -114,3 +114,4 @@ view.on('init', function (next) {
 	// Render the view
 	view.render('serviceEtReseau');
 };
+*/
